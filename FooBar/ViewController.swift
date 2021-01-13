@@ -13,7 +13,9 @@ class ViewController: UIViewController
    
     @IBOutlet var numberDisplay: UILabel!
     var number = 0
-   
+
+    
+        
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -23,15 +25,33 @@ class ViewController: UIViewController
  
     @IBAction func onTap(_ sender: UITapGestureRecognizer) {
         number += 1
-        numberDisplay.text = String(number)
+        if number % 15 == 0 {
+            view.backgroundColor = .red
+            numberDisplay.text = "Foo Bar"
+        }
+        else if number % 3 == 0{
+            view.backgroundColor = .green
+            numberDisplay.text = "Foo"
+        }
+        else if number % 5 == 0{
+            view.backgroundColor = .yellow
+            numberDisplay.text = "Bar"
+        }
+        else
+        {
+            view.backgroundColor = .black
+            numberDisplay.text = String(number)
+        }
+        
     }
     
     @IBAction func onPress(_ sender: UILongPressGestureRecognizer) {
         number = 0
+        view.backgroundColor = .black
         numberDisplay.text = String(number)
     }
-    
-    
+   
+
     
 }
 
