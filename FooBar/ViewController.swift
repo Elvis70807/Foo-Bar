@@ -25,7 +25,7 @@ class ViewController: UIViewController
  
     @IBAction func onTap(_ sender: UITapGestureRecognizer) {
         number += 1
-        if number % 15 == 0 {
+        if number % 3 == 0 && number % 5 == 0 {
             view.backgroundColor = .red
             numberDisplay.text = "Foo Bar"
         }
