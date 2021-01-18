@@ -28,13 +28,25 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbC-iV-CeF">
+                                <rect key="frame" x="104" y="193" width="206" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="tS5-cO-Xjk"/>
+                                    <constraint firstAttribute="width" constant="206" id="ugR-OU-76p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="84"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="egd-UD-dYp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MxV-Yh-qFP"/>
+                            <constraint firstItem="YbC-iV-CeF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-200" id="Sce-Ar-IfZ"/>
                             <constraint firstItem="egd-UD-dYp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tvO-rA-W9l"/>
+                            <constraint firstItem="YbC-iV-CeF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wWz-DD-S82"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Bi7-GN-utQ" appends="YES" id="lhc-NV-62W"/>
@@ -43,6 +55,7 @@
                     </view>
                     <connections>
                         <outlet property="numberDisplay" destination="egd-UD-dYp" id="fzn-85-6AX"/>
+                        <outlet property="secondaryNumberDisplay" destination="YbC-iV-CeF" id="7B6-Pg-5Vh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -57,7 +70,7 @@
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="530" y="78"/>
+            <point key="canvasLocation" x="528.98550724637687" y="77.678571428571431"/>
         </scene>
     </scenes>
 </document>
